@@ -2,6 +2,7 @@ import { useEffect } from "react";
 
 export default function Hero() {
   useEffect(() => {
+    if ("ontouchstart" in window || navigator.maxTouchPoints > 0) return;
     const cursor = document.createElement("div");
     cursor.className = "glitter-cursor";
     document.body.appendChild(cursor);
