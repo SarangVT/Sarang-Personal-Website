@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0f0f0f;
+}
+
+.glitter-cursor {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  pointer-events: none;
+  background: radial-gradient(circle, rgba(0,173,181,0.8) 0%, rgba(0,173,181,0) 70%);
+  box-shadow: 0 0 20px 5px rgba(0,173,181,0.6);
+  transform: translate(-50%, -50%);
+  mix-blend-mode: lighten;
+  animation: shimmer 1s infinite alternate;
+  z-index: 9999;
+}
+
+@keyframes shimmer {
+  0% {
+    filter: blur(3px) brightness(1);
+  }
+  100% {
+    filter: blur(1px) brightness(1.8);
+  }
+}
+
