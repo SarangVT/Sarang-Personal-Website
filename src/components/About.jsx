@@ -17,7 +17,7 @@ export default function About() {
           developers.
         </p>
         <p>
-          My goal: build technology that’s both powerful and elegant—whether
+          My goal: build technology that’s both powerful and elegant whether
           it’s for smarter agriculture, adaptive AI models, or real-time trading
           systems.
         </p>
