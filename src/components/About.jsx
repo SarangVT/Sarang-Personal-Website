@@ -11,7 +11,7 @@ export default function About() {
         </p>
         <p>
           I actively participate in competitive programming (Codeforces:{" "}
-          <span className="text-[#00ADB5]">1200+ rating</span>) and enjoy pushing
+          <span className="text-[#00ADB5]">1300+ rating</span>) and enjoy pushing
           problem-solving boundaries. I’m also building open-source tools that
           simplify metadata editing, visualization, and automation for
           developers.
