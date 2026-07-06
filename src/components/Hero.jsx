@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { motion } from "framer-motion";
 
 const tagline = [
-  "Computer Science Undergraduate at IIT Indore",
+  "IIT Indore CSE",
   "|",
   "Systems Builder",
   "|",
