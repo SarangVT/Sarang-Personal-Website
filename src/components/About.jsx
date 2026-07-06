@@ -25,13 +25,20 @@ export default function About() {
           I'm currently exploring the lower layers of the software stack,
           learning how efficient software is built, from memory management and
           concurrency to high-performance execution in C and C++. I enjoy
-          understanding not just <em>how</em> software works, but <em>why</em> certain design decisions lead to faster, safer, and more reliable
+          understanding not just <em>how</em> software works, but <em>why</em>{" "}
+          certain design decisions lead to faster, safer, and more reliable
           systems.
         </p>
 
         <p>
-          Outside of development, I regularly solve algorithmic problems to
-          sharpen my problem-solving skills. You can find me on{" "}
+          Problem solving has always been one of my strongest interests. Before
+          college, I qualified for the{" "}
+          <span className="text-[#00ADB5] font-medium">
+            Regional Mathematics Olympiad (RMO)
+          </span>
+          , an experience that further strengthened my analytical thinking and
+          love for tackling challenging problems. Today, I continue that journey
+          by regularly solving algorithmic problems on{" "}
           <a
             href="https://codeforces.com/profile/ChaseTheCause"
             target="_blank"
@@ -58,7 +65,7 @@ export default function About() {
           >
             CSES
           </a>
-          , where I continue improving my algorithmic thinking and writing
+          , where I enjoy sharpening my algorithmic thinking and writing
           efficient solutions.
         </p>
 
@@ -68,6 +75,12 @@ export default function About() {
           utility, a distributed backend, or an idea that starts as a weekend
           project. For me, curiosity has always been the best motivation to
           learn something new.
+        </p>
+
+        <p>
+        In my free time, you'll usually find me playing{" "}
+        <span className="text-[#00ADB5] font-medium">table tennis</span>,
+        binge-watching movies and web series, maybe learning piano or just enjoying the luxury of sleeping in.
         </p>
       </div>
     </section>

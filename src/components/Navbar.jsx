@@ -12,6 +12,7 @@ export default function Navbar() {
 
       sections.forEach((id) => {
         const el = document.getElementById(id);
+
         if (el && window.scrollY >= el.offsetTop - 200) {
           current = id;
         }
@@ -20,11 +21,19 @@ export default function Navbar() {
       setActive(current);
     };
 
+    handleScroll();
+
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const navItems = ["about", "skills", "projects", "contact"];
+  const navItems = [
+    { label: "Home", id: "hero" },
+    { label: "About", id: "about" },
+    { label: "Skills", id: "skills" },
+    { label: "Projects", id: "projects" },
+    { label: "Contact", id: "contact" },
+  ];
 
   return (
     <nav className="fixed top-0 left-0 w-full bg-[#121212]/80 backdrop-blur-md shadow-lg z-50">
@@ -33,22 +42,22 @@ export default function Navbar() {
           Sarang Thakare
         </h1>
 
-        {/* Desktop */}
+        {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-10 text-lg font-semibold text-gray-300">
-          {navItems.map((id) => (
+          {navItems.map((item) => (
             <a
-              key={id}
-              href={`#${id}`}
+              key={item.id}
+              href={`#${item.id}`}
               className={`transition-colors duration-300 hover:text-[#00ADB5] ${
-                active === id ? "text-[#00ADB5]" : ""
+                active === item.id ? "text-[#00ADB5]" : ""
               }`}
             >
-              {id.charAt(0).toUpperCase() + id.slice(1)}
+              {item.label}
             </a>
           ))}
         </div>
 
-        {/* Mobile Button */}
+        {/* Mobile Menu Button */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
           className="md:hidden text-[#00ADB5] text-3xl"
@@ -64,16 +73,16 @@ export default function Navbar() {
         }`}
       >
         <div className="px-[8vw] pb-6 pt-2 bg-[#121212]/95 backdrop-blur-md">
-          {navItems.map((id) => (
+          {navItems.map((item) => (
             <a
-              key={id}
-              href={`#${id}`}
+              key={item.id}
+              href={`#${item.id}`}
               onClick={() => setMenuOpen(false)}
               className={`block py-3 text-left text-lg font-semibold transition-colors duration-300 hover:text-[#00ADB5] ${
-                active === id ? "text-[#00ADB5]" : "text-gray-300"
+                active === item.id ? "text-[#00ADB5]" : "text-gray-300"
               }`}
             >
-              {id.charAt(0).toUpperCase() + id.slice(1)}
+              {item.label}
             </a>
           ))}
         </div>
