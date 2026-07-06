@@ -65,7 +65,7 @@ export const projects = [
     "PostgreSQL",
   ],
 
-  github: "",
+  github: "https://github.com/saranshhalwai/iiti-rnd",
 
   image: "/projects/rdportal.png",
 },
@@ -135,7 +135,7 @@ export const projects = [
     "MongoDB",
   ],
 
-  github: "",
+  github: "https://github.com/SarangVT/FinanceTrackerApp",
 
   image:
     "/projects/fintrack.png",
@@ -158,7 +158,7 @@ export const projects = [
     "MongoDB",
   ],
 
-  github: "",
+  github: "https://github.com/SarangVT/GDSCWDBlogX",
 
   image:
     "/projects/blogx.png",
@@ -199,11 +199,8 @@ description:
     "CSS"
   ],
 
-  github: "",
+  github: "https://github.com/saranshhalwai/CodeBuddy",
 
   image: "/projects/codebuddy.png",
 }
-
-
-
 ];
